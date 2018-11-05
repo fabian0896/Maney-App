@@ -1,3 +1,25 @@
-<p>
-  login works!
-</p>
+<div class="wraper">
+  <form (ngSubmit)="ingresar()" [formGroup]="login">
+    <div class="header">
+        <h1>LogIn</h1>
+        <p>Ingresa con tu correo y contraseña</p>
+    </div>
+    
+    
+    <div class="form-input">
+      <input formControlName='email'  type="email">
+      <i class="fas fa-user"></i>
+    </div>
+
+    <div class="form-input">
+      <input formControlName='password' type="password">
+      <i class="fas fa-lock"></i>
+    </div>
+    
+    <button type="submit">Ingresar</button>
+  </form>
+
+</div>
+
+
+
